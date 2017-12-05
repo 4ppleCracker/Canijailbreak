@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+<title>Can I Jailbreak?</title>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="ua-parser.min.js" type="text/javascript"></script>
+<script src="checker.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+        <p>Firmware: <input type="text" id="fw" value=""></p>
+        <input type="radio" name="bit" value="32">32-bit
+        <input type="radio" name="bit" id="over10" value="64">64-bit<br> <button type="button" onclick="detectinfo()">detect</button><br><br>
+        
+        <input type="radio" name="jbordg" value="jb">Jailbreak
+        <input type="radio" name="jbordg" value="dg">Downgrade<br>
+
+        <button type="button" onclick="check()" class="Cani">Can i <span class="jbvsdowngrade">jailbreak</span>?</button>
+        <p><span class="jbvsdowngrade1">Jailbreak</span> available for that firmware:</br></p>
+        <div class="jailbreaks"></div>
+                
+
+</body>
+
+</html> 
