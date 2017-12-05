@@ -1,7 +1,7 @@
 function jbcheck() {
     var version = document.getElementById("fw").value;
     console.log(version);
-    $.getJSON("jailbreaks.json", function(jb) {
+    $.getJSON("https://canijailbreak.herokuapp.com/jailbreaks.json", function(jb) {
         var jb = jb["jailbreak"]
         var major = version.split(".")[0];
         clearlist();
@@ -59,7 +59,7 @@ function detectinfo() {
 }
 
 // Extra functions
-function debug(obj) {
+function _alert(obj) {
     console.log(obj);
 }
 
